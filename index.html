@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets.Pk | Best Online Gadgets Shop in Pakistan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #0cc0df;
+        }
+        
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .icon {
+            margin-left: 20px;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .icon:hover {
+            color: #ff6b6b;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #0cc0df;
+            color: white;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Hero Banner Styles */
+.hero-banner {
+  width: 100%;
+  overflow: hidden; /* Ensures no scrollbars if image is large */
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below image */
+}
+/* Category Grid Section with Image Tags */
+.category-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.new-arrivals {
+  padding: 30px 20px;
+  background-color: white;
+}
+
+.new-arrivals h2 {
+  text-align: center;
+  background: linear-gradient(to right, #0cc0df, #303030);
+  color: white;
+  padding: 12px;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sale-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f62d68;
+  color: white;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-price s {
+  color: #999;
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 10px;
+  background: #0cc0df;
+  color: #303030;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button:hover {
+  background: #c40047;
+}
+/* Services Section Styles with Icons */
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background: #f8f8f8;
+}
+
+.service-item {
+  width: 23%;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #303030;
+  border-radius: 10px;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #303030; /* Icon color */
+  
+}
+
+.service-icon i {
+  transition: transform 0.3s ease;
+}
+
+.service-icon i:hover {
+  transform: scale(1.1);
+}
+
+.service-item h3 {
+  margin-bottom: 12px;
+  color: #303030;
+}
+
+.service-item p {
+  color: black;
+  line-height: 1.5;
+}
+/* Footer Styles */
+.main-footer {
+  background-color: #303030;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-column {
+  width: 30%;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #3498db;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #0cc0df;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #303030;
+  transform: translateY(-3px);
+  border: 2px solid white;
+}
+.social-link {
+  color: #fff;
+  background-color: #34495e;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  text-decoration: none !important; /* Ensures no underline */
+}
+
+.social-link:hover {
+  background-color: #3498db;
+  transform: translateY(-3px);
+  text-decoration: none !important; /* Ensures no underline on hover */
+}
+.recaptcha-notice {
+  font-size: 12px;
+  color: #bdc3c7;
+  margin-top: 20px;
+}
+
+.recaptcha-notice a {
+  color: #0cc0df;
+  text-decoration: none;
+}
+/* Credit Bar Styles */
+.credit-bar {
+  background-color: #0cc0df;
+  color: #303030;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid whitesmoke;
+}
+
+.credit-bar p {
+  margin: 0;
+}
+
+.credit-bar strong {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Replace with your actual logo image -->
+            <img src="Gadgets.PK.png" alt="Gadgets.Pk Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Kitchenware</a></li>
+                <li><a href="#">Home Appliances</a></li>
+                <li><a href="#">Gadgets</a></li>
+                <li><a href="#">Households</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Toys</a></li>
+            </ul>
+        </nav>
+        
+        <div class="icons">
+            <div class="icon">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section with just a banner image -->
+<section class="hero-banner">
+  <img src="GadgetsPK Hero Section.png" alt="Gadgets Hero Section">
+</section>
+<!-- Category Grid Section with Image Tags -->
+<section class="category-section">
+    <div class="category-grid">
+      <img src="Home-Appliances-3.webp" alt="Home Appliances">
+      <img src="Home-Decor-3.webp" alt="Home Decor">
+      <img src="Kitchenware.webp" alt="Kitchenware">
+      <img src="Toys.webp" alt="Toys">
+      <img src="Car-Accessories.webp" alt="Car Accessories">
+      <img src="Gadgets.webp" alt="Gadgets">
+      <img src="Households.webp" alt="Households">
+      <img src="Personal-Care.webp" alt="Personal Care">
+    </div>
+  </section>
+  <section class="new-arrivals">
+    <h2>New Arrival</h2>
+    <div class="product-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="Wire-Dishwashing-Gloves.webp" alt="Gloves">
+        <div class="product-info">
+          <p class="product-title">Wire Dishwashing Gloves - Multipurpose Gloves (1 Pair)</p>
+          <p class="product-price"><strong>Rs 500</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Clever-Cutter.webp" alt="Clever Cutter">
+        <div class="product-info">
+          <p class="product-title">Clever Cutter - 2 In 1 Knife With Cutting Board For Chopping</p>
+          <p class="product-price"><s>Rs 1,000</s> <strong>Rs 800</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Foldable-Frying-Basket.webp" alt="Frying Basket">
+        <div class="product-info">
+          <p class="product-title">Foldable Frying Basket – Stainless Steel Multifunction Fry Basket</p>
+          <p class="product-price"><s>Rs 1,200</s> <strong>Rs 1,000</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="2-In-1-Floor-Cleaning-Brush.webp" alt="Floor Cleaning Brush">
+        <div class="product-info">
+          <p class="product-title">2 In 1 Floor Cleaning Brush – Long Handle Removable Wiper Brush</p>
+          <p class="product-price"><s>Rs 1,500</s> <strong>Rs 1,200</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Egg Sitter Gel.webp" alt="Egg Sitter Gel">
+        <div class="product-info">
+          <p class="product-title">Egg Sitter Gel Cushion – Breathable Honeycomb Tailbone Pain Relief Seat</p>
+          <p class="product-price"><s>Rs 2,200</s> <strong>Rs 1,800</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Unique-Cell-Phone-Holders-For-Desk.webp" alt="Unique Cell Phone Holders For Desk">
+        <div class="product-info">
+          <p class="product-title">Unique Cell Phone Holders For Desk – Foldable Portable Traveling Universal Stand</p>
+          <p class="product-price"><s>Rs 700</s> <strong>Rs 500</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Funnel.jpg" alt="Collapsible Silicone Funnel">
+        <div class="product-info">
+          <p class="product-title">Collapsible Silicone Funnel – (Pack of 3) Food Grade Funnels For Filling Small or Mini Bottles</p>
+          <p class="product-price"><s>Rs 500</s> <strong>Rs 400</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Fairy String Lights.png" alt="Fairy String Lights">
+        <div class="product-info">
+          <p class="product-title">Fairy String Lights – Snow Pompon Fairy String Waterproof Solar LED Light</p>
+          <p class="product-price"><s>Rs 2,200</s> <strong>Rs 2,000</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new-arrivals">
+    <h2>Best Seller</h2>
+    <div class="product-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Kitchen-Wall-Stove-Aluminum-Foil.webp" alt="Kitchen Wall Stove Aluminum Foil">
+        <div class="product-info">
+          <p class="product-title">Kitchen Wall Stove Aluminum Foil – Self Adhesive Stickers (Pack of 02)</p>
+          <p class="product-price"><s>Rs 1,200</s> <strong>Rs 800</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Tummy-Trimmer.webp" alt="Tummy Trimmer">
+        <div class="product-info">
+          <p class="product-title">Tummy Trimmer – Double Spring Foot Pedal Fitness Exerciser</p>
+          <p class="product-price"><s>Rs 2,000</s> <strong>Rs 1,200</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Mini-Electronic-Digital-Kitchen-Scale.webp" alt="Digital Weighing Machine">
+        <div class="product-info">
+          <p class="product-title">Mini Electronic Digital Kitchen Scale – Digital Weighing Machine</p>
+          <p class="product-price"><s>Rs 2,000</s> <strong>Rs 1,400</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="2-In-1-Floor-Cleaning-Brush.webp" alt="Floor Cleaning Brush">
+        <div class="product-info">
+          <p class="product-title">2 In 1 Floor Cleaning Brush – Long Handle Removable Wiper Brush</p>
+          <p class="product-price"><s>Rs 1,500</s> <strong>Rs 1,200</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Aiwa-Tool-Kit.webp" alt="Egg Sitter Gel">
+        <div class="product-info">
+          <p class="product-title">Aiwa Tool Kit – 40 Pcs Aiwa Combination Socket Wrench Set</p>
+          <p class="product-price"><s>Rs 2,000</s> <strong>Rs 1,500</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="My-English-E-Book.webp" alt="My English E-Book">
+        <div class="product-info">
+          <p class="product-title">My English E-Book – Learning Book With Sounds For Kids</p>
+          <p class="product-price"><s>Rs 2,500</s> <strong>Rs 1,800</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card">
+        <img src="Mini-Retractable-Mop.webp" alt="Mini Retractable Mop">
+        <div class="product-info">
+          <p class="product-title">Mini Retractable Mop – Telescopic Microfiber Mop With Long Handle</p>
+          <p class="product-price"><strong>Rs 700</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="product-card">
+        <span class="sale-tag">Sale!</span>
+        <img src="Automatic-Water-Dispenser.webp" alt="Fairy String Lights">
+        <div class="product-info">
+          <p class="product-title">Automatic Water Dispenser Pump – Rechargeable Electric Water Pump</p>
+          <p class="product-price"><s>Rs 1,200</s> <strong>Rs 800</strong></p>
+          <button><strong>Add to cart</strong></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section with Font Awesome Icons -->
+<div class="services-section">
+  <div class="service-item">
+    <div class="service-icon"><i class="fas fa-headset"></i></div>
+    <h3>Customer Support</h3>
+    <p>Provide seamless support across multiple channels, including phone, email, live chat, social media, and WhatsApp.</p>
+  </div>
+  
+  <div class="service-item">
+    <div class="service-icon"><i class="fas fa-money-bill-wave"></i></div>
+    <h3>Cash on Delivery</h3>
+    <p>Enjoy the convenience of Cash on Delivery—pay only when your order arrives!</p>
+  </div>
+  
+  <div class="service-item">
+    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+    <h3>Easy Return</h3>
+    <p>Shop with confidence—Easy Return available if you're not fully satisfied!</p>
+  </div>
+  
+  <div class="service-item">
+    <div class="service-icon"><i class="fas fa-truck"></i></div>
+    <h3>Free Shopping</h3>
+    <p>We're offering Free Shipping on all orders over PKR 2,000 all across Pakistan—shop now and save more!</p>
+  </div>
+</div>
+<!-- Footer Section -->
+<footer class="main-footer">
+  <div class="footer-container">
+    <!-- Customer Care Column -->
+    <div class="footer-column">
+      <h4>CUSTOMER CARE</h4>
+      <ul>
+        <li><a href="#">Return/Refund Policy</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">FAQ's</a></li>
+      </ul>
+    </div>
+
+    <!-- Information Column -->
+    <div class="footer-column">
+      <h4>INFORMATION</h4>
+      <ul>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Shop Now</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Get in Touch Column -->
+    <div class="footer-column">
+      <h4>GET IN TOUCH</h4>
+      <div class="social-icons">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p class="recaptcha-notice">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+    </div>
+  </div>
+</footer>
+<!-- Copyright/Credit Bar -->
+<div class="credit-bar">
+  <div class="container">
+    <p>&copy; 2025 All Rights Reserved - Designed By <strong>M Kaleem Aslam</strong></p>
+  </div>
+</div>
+
+</body>
+</html>
